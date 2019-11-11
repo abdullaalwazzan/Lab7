@@ -210,9 +210,7 @@ public class BuddyInfo {
 	
 	public static BuddyInfo pimport(String b) {
 		Scanner scan = new Scanner(b).useDelimiter("\\scan*#\\s*");
-		String name = scan.next();
-		int age = scan.nextInt();
-		String number = scan.next();
+		b.split("#");
 		scan.close();
 		return new BuddyInfo(name, age, number);
 	}
